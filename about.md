@@ -5,15 +5,13 @@ description: ""
 ---
 <!-- <div style="border-bottom: 1px solid #ccc; margin: 20px 0;"></div> -->
 
-From a young age, I've been captivated by the interplay of numbers and the natural world. My grandfather, a seasoned equestrian, played a formative role in nurturing this dual fascination. As he guided me through the rhythmic movements of horseback riding in his rustic family stable, he would simultaneously weave in lessons on the underlying mathematics - the angles, the leverage, the precise calculations required to achieve harmony with the animals.
+Ever since I was a kid, I’ve been fascinated by two things: numbers and nature. My grandad, who spent most of his life around horses, had a big hand in that. He’d take me out to the old family stable, where the air always smelled like hay and leather, and teach me how to ride. But it wasn’t just about sitting on a horse. He’d explain the why behind everything. Like how the angle of your body affects the horse’s movement, or how a tiny shift in weight could make all the difference. It was math, but not the kind you’d find in a textbook. It was alive, practical, and tied to the rhythm of the animal beneath you. Those moments stuck with me, and they’re a big part of why I see the world the way I do today.
 
-This early exposure to the elegance of quantitative reasoning, juxtaposed with the earthy textures of the great outdoors, left an indelible mark. I found myself equally enthralled by the abstract patterns of numbers and the tangible patterns of the natural environment.
+These days, my work is about making sense of uncertainty. I use analysis, clear communication, and a level-headed approach to help people and businesses make better decisions. That’s what inspired me to start Quantidum, a data analytics consulting firm where we use advanced tools to solve real-world problems. It’s been a process of constant learning, and I’m still growing every day.
 
-Today as a Google certified data analyst and a [DS4A fellow](https://www.credential.net/67d98bab-1d5c-482f-91bd-3b54c6690092) at Correlation One, I can easily navigate uncertain situations to produce the desired outcome because of my level-head, analytical skills, communication, and global outlook. That has allowed me much success in my endeavors as the Founder of Quantidum, a data analytics consulting firm where we use advanced analytical tools and techniques to help businesses make better decisions. My passion for learning and continuous development has propelled me further than I could imagine and have inspired the people around me.
+But for me, it’s not just about work. I’ve always believed in giving back and creating opportunities for others. That’s why I’m building MansaPi, a non-profit focused on inspiring a love for STEM in students in Mali. Through education and hands-on projects, we’re helping young people discover the beauty of science, technology, engineering, and math—and hopefully sparking a passion for solving problems.
 
-I was encouraged to get involved in the community and give back in whatever way possible. I'm currently working on a non-profit, [MansaPi](https://mansapi.org/), to cultivate a passion for STEM subjects among students in Mali through educational initiatives, fostering a deep appreciation and enthusiasm for science, technology, engineering, and mathematics.
-
-Thank you for visiting my website. I hope you find both the beauty and power of data reflected in its content.
+Thank you for visiting my Blog. I hope you find both the beauty and power of data reflected in its content.
 <!-- ![Mariam](themes/ezhil/images/zmariam.png) -->
 
 <div style="border-bottom: 1px solid #ccc; margin: 20px 0;"></div>
