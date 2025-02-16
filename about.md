@@ -3,7 +3,7 @@ title: "About"
 date: 2023-10-09T10:00:00Z
 description: ""
 ---
-<div style="border-bottom: 1px solid #ccc; margin: 20px 0;"></div>
+<!-- <div style="border-bottom: 1px solid #ccc; margin: 20px 0;"></div> -->
 
 From a young age, I've been captivated by the interplay of numbers and the natural world. My grandfather, a seasoned equestrian, played a formative role in nurturing this dual fascination. As he guided me through the rhythmic movements of horseback riding in his rustic family stable, he would simultaneously weave in lessons on the underlying mathematics - the angles, the leverage, the precise calculations required to achieve harmony with the animals.
 
