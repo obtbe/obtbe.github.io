@@ -151,35 +151,17 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 80px; /* Adjust based on actual header height */
+  margin-bottom: 50px;
 }
 
 .masthead {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #fffef9; /* Your desired background */
-  z-index: 1000;
-  padding: 15px 0;
+  padding: 20px 0;
   border-bottom: 1px solid $lightGray;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
   @include mobile {
     text-align: center;
-    flex-direction: column;
   }
 }
-
-/* Push down content so it's not hidden behind the fixed header */
-.wrapper-masthead {
-  padding-top: 80px; /* Adjust this to match header height */
-}
-
-
 
 .site-avatar {
   float: left;
