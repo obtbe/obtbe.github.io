@@ -151,17 +151,26 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  margin-bottom: 80px; /* Adjust based on actual header height */
 }
 
 .masthead {
+  position: sticky; /* Keeps it visible while scrolling */
+  top: 0;
+  background-color: #fffef9; /* Your desired background color */
+  z-index: 1000;
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
+  display: flex;
+  justify-content: space-between; /* Ensures buttons stay visible */
+  align-items: center; /* Keeps everything aligned properly */
 
   @include mobile {
     text-align: center;
+    flex-direction: column;
   }
 }
+
 
 .site-avatar {
   float: left;
