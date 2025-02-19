@@ -155,21 +155,30 @@ img {
 }
 
 .masthead {
-  position: sticky; /* Keeps it visible while scrolling */
+  position: fixed;
   top: 0;
-  background-color: #fffef9; /* Your desired background color */
+  left: 0;
+  width: 100%;
+  background-color: #fffef9; /* Your desired background */
   z-index: 1000;
-  padding: 20px 0;
+  padding: 15px 0;
   border-bottom: 1px solid $lightGray;
+
   display: flex;
-  justify-content: space-between; /* Ensures buttons stay visible */
-  align-items: center; /* Keeps everything aligned properly */
+  justify-content: space-between;
+  align-items: center;
 
   @include mobile {
     text-align: center;
     flex-direction: column;
   }
 }
+
+/* Push down content so it's not hidden behind the fixed header */
+.wrapper-masthead {
+  padding-top: 80px; /* Adjust this to match header height */
+}
+
 
 
 .site-avatar {
