@@ -150,17 +150,20 @@ img {
 // .masthead
 //
 
-.wrapper-masthead {
-  margin-bottom: 50px;
-}
-
 .masthead {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $white; /* Keeps it visible */
+  z-index: 1000;
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
+}
 
-  @include mobile {
-    text-align: center;
-  }
+/* Push the content down so it doesn't get hidden behind the sticky header */
+.wrapper-masthead {
+  margin-bottom: 80px; /* Adjust if needed */
 }
 
 .site-avatar {
