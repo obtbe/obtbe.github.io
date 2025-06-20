@@ -5,50 +5,144 @@ date: 2022-12-15 12:00:00
 categories: [statistics, regression, analysis]
 ---
 
-Linear regression and logistic regression are two commonly used statistical models that are used in data analysis. While they share some similarities, there are important differences that make them suitable for different types of problems. In this article, we will explore the key differences between linear regression and logistic regression and provide examples to help you understand when to use each one.
+<div class="blog-container">
+  <div class="blog-content">
+    <p>Data analysis often uses two models: linear regression and logistic regression. They sound similar, but they solve different problems. This article explains their differences with clear examples to show when to use each one.</p>
 
-## Linear Regression
+    <h2>Linear Regression</h2>
+    <p>Linear regression predicts numbers. It finds a straight-line relationship between inputs (independent variables) and an output (dependent variable). For example, imagine predicting a car’s gas mileage based on its weight. A heavier car might use more gas, and linear regression can model this pattern.</p>
+    <p>Suppose we collect data on 50 cars, recording their weight in pounds and mileage in miles per gallon. A linear regression model might look like this:</p>
+    <pre><code>Mileage = 40 - 0.01 * Weight</code></pre>
+    <p>Here, 40 is the starting point (intercept), and -0.01 means that for every extra pound, mileage drops by 0.01 miles per gallon. So, a 3,000-pound car would have an estimated mileage of 40 - (0.01 * 3,000) = 10 miles per gallon. Linear regression works because the relationship is steady: weight changes predict mileage changes in a straight line.</p>
 
-Linear regression is a statistical method used to model the linear relationship between a dependent variable and one or more independent variables. It is used to make predictions about continuous variables, such as predicting the price of a house based on its size and location. Linear regression is based on the assumption that the relationship between the dependent and independent variables is linear, meaning that a change in the independent variable has a constant effect on the dependent variable.
+    <h2>Logistic Regression</h2>
+    <p>Logistic regression predicts yes-or-no outcomes. It calculates the chance of something happening, like whether a customer will buy a product. The output is a probability between 0 and 1, which you can turn into a yes or no decision.</p>
+    <p>For example, consider a store tracking 100 customers, noting their age and whether they bought a new phone. Logistic regression can predict the chance of a purchase based on age. The model might look like this:</p>
+    <pre><code>Chance of Buying = 1 / (1 + e^(-(-5 + 0.1 * Age)))</code></pre>
+    <p>Here, -5 and 0.1 are numbers the model learns. For a 30-year-old, the equation gives a probability, say 0.73, meaning a 73% chance of buying. If the probability is over 0.5, predict “yes”; otherwise, predict “no”. Logistic regression fits this problem because the outcome is binary: buy or don’t buy.</p>
 
-For example, let's say we are trying to predict the price of a house based on its size (in square feet) and location (rural vs urban). We could use linear regression to model this relationship and make predictions about the price of a house based on its size and location. The equation for a simple linear regression model would look something like this:
+    <h2>How They Differ</h2>
+    <p>Linear and logistic regression have distinct uses:</p>
+    <ul>
+      <li><strong>Output type</strong>: Linear regression predicts numbers, like gas mileage. Logistic regression predicts probabilities for yes-or-no questions, like buying a phone.</li>
+      <li><strong>Input types</strong>: Both can use numbers or categories as inputs, but logistic regression often works with simpler inputs, like age or yes-or-no answers.</li>
+      <li><strong>Math assumptions</strong>: Linear regression expects a straight-line relationship and errors that spread evenly. Logistic regression expects a relationship that curves to fit probabilities between 0 and 1.</li>
+      <li><strong>Coefficient meaning</strong>: In linear regression, coefficients show how much the output changes per input unit. In logistic regression, they affect the probability curve, making them harder to interpret directly.</li>
+    </ul>
 
-`Price = B0 + B1 * Size + B2 * Location`
+    <h2>When to Use Each</h2>
+    <p>Choose the right model based on your goal. Use linear regression to predict numbers, like estimating a car’s mileage from its weight or a house’s price from its size. Use logistic regression for yes-or-no predictions, like whether a customer will buy or a student will pass a test.</p>
+    <p>Can you mix them? Sometimes, but it’s tricky. Linear regression on a yes-or-no problem might give weird results, like probabilities outside 0 or 1. Logistic regression on numbers is rare because it’s built for binary outcomes. Stick to the problem type: numbers for linear, binary for logistic.</p>
 
-In this equation, `B0` is the intercept term, `B1` is the coefficient for the size variable, and `B2` is the coefficient for the location variable. The coefficients tell us how much the dependent variable (price) changes for a given change in the independent variable (size or location). For example, if the coefficient for the size variable is 0.5, this means that for every 1 square foot increase in size, the price of the house is expected to increase by $0.5.
+    <p>Both models are powerful tools. Linear regression helps with number predictions, and logistic regression tackles binary choices. Pick the one that matches your data’s question, and you’ll get clear, useful results.</p>
+  </div>
+</div>
 
-## Logistic Regression
+<style>
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+  }
 
-Logistic regression, on the other hand, is used to model the probability of a binary outcome, such as predicting whether a student will pass or fail a class based on their grades and attendance. Logistic regression is based on the logistic function, which maps the probability of an event occurring (such as passing a class) to a value between 0 and 1.
+  .blog-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+  }
 
-For example, let's say we are trying to predict whether a student will pass or fail a class based on their grades (on a scale of 0-100) and attendance (number of classes missed). We could use logistic regression to model this relationship and make predictions about the probability of a student passing or failing the class. The equation for a simple logistic regression model would look something like this:
+  .blog-content {
+    padding: 30px;
+  }
 
-`P(Pass) = 1 / (1 + e^(-B0 - B1 * Grades - B2 * Attendance))`
+  .blog-content h2 {
+    font-size: 1.8em;
+    color: #1a73e8;
+    margin-top: 30px;
+    position: relative;
+    padding-bottom: 10px;
+  }
 
-In this equation, `P(Pass)` is the probability of the student passing the class, `B0` is the intercept term, `B1` is the coefficient for the grades variable, and `B2` is the coefficient for the attendance variable. The coefficients tell us how much the probability of the event occurring (passing the class) changes for a given change in the independent variable (grades or attendance). For example, if the coefficient for the grades variable is *0.1*, this means that for every 1 point increase in grades, the probability of the student passing the class is expected to increase by *10%*.
+  .blog-content h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: #1a73e8;
+  }
 
-## Key Differences
+  .blog-content p {
+    font-size: 1.1em;
+    margin: 20px 0;
+    color: #444;
+  }
 
-There are several key differences between linear regression and logistic regression that are important to understand:
+  .blog-content p:first-of-type {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #1a73e8;
+    padding-left: 20px;
+  }
 
-* *Type of dependent variable*: Linear regression is used to predict continuous variables, while logistic regression is used to predict binary outcomes. This means that linear regression is more suitable for predicting numerical values, while logistic regression is better suited for predicting categories.
+  .blog-content ul {
+    margin: 20px 0;
+    padding-left: 25px;
+  }
 
-* *Type of independent variables*: In linear regression, the independent variables can be any type of data, including continuous or categorical variables. In logistic regression, the independent variables must be categorical or binary, meaning that they can only take on a limited number of values.
+  .blog-content ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #444;
+  }
 
-* *Assumptions*: Linear regression assumes a linear relationship between the dependent and independent variables and a normal distribution of the errors (deviations from the true values). Logistic regression assumes a logistic distribution of the dependent variable and a linear relationship between the independent variables and the log-odds of the dependent variable.
+  /* Hover Animation for Headings */
+  .blog-content h2:hover {
+    color: #005bb5;
+    transition: color 0.3s ease;
+  }
 
-* *Interpretation of coefficients*: In linear regression, the coefficients represent the change in the dependent variable for a given change in the independent variable. In logistic regression, the coefficients represent the change in the log-odds of the dependent variable for a given change in the independent variable.
+  /* Code Block Styling */
+  pre, code {
+    background: #f4f4f4;
+    border-radius: 6px;
+    padding: 10px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.95em;
+    display: block;
+    margin: 10px 0;
+  }
 
-## When to Use Linear Regression vs Logistic Regression
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .blog-container {
+      margin: 20px;
+      padding: 15px;
+    }
 
-So ... Hush! I know what you're thinking, when should you use linear regression and when should you use logistic regression? Here are some guidelines:
+    .blog-content {
+      padding: 20px;
+    }
 
-* Use *linear regression* if you want to predict a continuous dependent variable based on one or more independent variables. For example, you might use linear regression to predict the price of a house based on its size and location.
-* Use *logistic regression* if you want to predict a binary dependent variable based on one or more independent variables. For example, you might use logistic regression to predict whether a student will pass or fail a class based on their grades and attendance.
+    .blog-content h2 {
+      font-size: 1.5em;
+    }
 
-It's important to keep in mind that these are general guidelines and there may be cases where it is appropriate to use one type of model for a problem that it is not typically used for. For example, you might use linear regression to predict a binary outcome if you are comfortable making assumptions about the distribution of the errors and are interested in understanding the marginal effect of the independent variables. Similarly, you might use logistic regression to predict a continuous outcome if you are comfortable making assumptions about the distribution of the dependent variable and are interested in understanding the odds ratio of the independent variables.
+    .blog-content p, .blog-content ul li {
+      font-size: 1em;
+    }
+  }
 
-## Conclusion
-
-Linear regression and logistic regression are two useful statistical tools that have different applications. Linear regression is used to model the relationship between a dependent and independent variables and make predictions about continuous variables, while logistic regression is used to model the probability of a binary outcome and make predictions about categorical variables. Understanding the differences between these two models can help you choose the right tool for your data analysis needs.
-
+  /* Smooth Scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
