@@ -52,7 +52,7 @@ categories: [statistics, regression, analysis]
     max-width: 800px;
     margin: 40px auto;
     padding: 20px;
-    background: #fcd8bb;
+    background: #fdeaeb;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     overflow: hidden;
