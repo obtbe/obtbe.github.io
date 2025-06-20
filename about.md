@@ -3,225 +3,82 @@ title: "About"
 date: 2023-10-09T10:00:00Z
 description: ""
 ---
+<!-- <div style="border-bottom: 1px solid #ccc; margin: 20px 0;"></div> -->
 
-<div class="about-plain">
-  <div class="bio-text">
-    <p>In Bamako, Mali, I grew up loving numbers and nature. My grandad, a horse trainer, sparked that passion. His stable smelled of hay, and he taught me to ride, showing how a small lean could steer a horse. Math lived in those moments, and it still shapes me.</p>
-    <p>Now, I use data to solve problems. I founded Quantidata, a data analytics firm, to help businesses with Python and SQL. Each project brings new lessons. I also started MansaPi, a nonprofit to get Mali’s kids into STEM. They code simple apps or build solar lights in our workshops, chasing big dreams.</p>
-    <p>This blog shares my ideas on data and tech. I hope it sparks something in you.</p>
-    <blockquote class="quote">“Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.” — Rumi</blockquote>
-  </div>
-  <div class="info-text">
-    <div class="tools-section">
-      <h3>Tools I Use</h3>
-      <div class="tool-list">
-        <img src="/images/sql.png" alt="SQL Icon" width="24" height="24" title="SQL">
-        <img src="/images/python.png" alt="Python Icon" width="24" height="24" title="Python">
-        <img src="/images/plotly.png" alt="Plotly Icon" width="60" height="24" title="Plotly">
-        <img src="/images/streamlit.png" alt="Streamlit Icon" width="24" height="24" title="Streamlit">
-        <img src="/images/pandas.png" alt="Pandas Icon" width="48" height="24" title="Pandas">
-        <img src="/images/numpy.png" alt="Numpy Icon" width="48" height="24" title="Numpy">
-        <img src="/images/powerbi.png" alt="Power BI Icon" width="24" height="24" title="Power BI">
-        <img src="/images/git.png" alt="Git Icon" width="24" height="24" title="Git">
-        <img src="/images/jupyter.png" alt="Jupyter Icon" width="24" height="24" title="Jupyter">
-        <img src="/images/tableau.png" alt="Tableau Icon" width="24" height="24" title="Tableau">
-      </div>
-    </div>
-    <div class="podcasts-section">
-      <h3>Podcasts I Enjoy</h3>
-      <ul>
-        <li><a href="https://podcasts.apple.com/us/channel/roots-community-podcast/id6502764375">Heartwork</a> - Ustadh AbdelRahman Murphy shares practical wisdom.</li>
-        <li><a href="https://podcasts.apple.com/us/podcast/mufti-menk/id592746186">Mufti Menk</a> - Muslim Central offers clear faith insights.</li>
-        <li><a href="https://podcasts.apple.com/us/podcast/sheikh-assim-al-hakeem/id1723926769">Sheikh Assim Al Hakeem</a> - Straight answers for daily questions.</li>
-        <li><a href="https://podcasts.apple.com/us/podcast/how-can-i-say-this/id1434883770">How Can I Say This...</a> - Beth Buelow hones communication skills.</li>
-        <li><a href="https://podcasts.apple.com/us/podcast/hbr-ideacast/id152022135">HBR IdeaCast</a> - Harvard Business Review explores business trends.</li>
-        <li><a href="https://podcasts.apple.com/us/podcast/data-humanized-by-correlation-one/id1693484349">Data Humanized</a> - Correlation One simplifies data ideas.</li>
-        <li><a href="https://podcasts.apple.com/us/podcast/eckhart-tolle-essential-teachings/id1458654443">Eckhart Tolle</a> - Tolle and Oprah dive into mindfulness.</li>
-        <li><a href="https://podcasts.apple.com/us/podcast/hidden-brain/id1028908750">Hidden Brain</a> - Shankar Vedantam unpacks how minds work.</li>
-        <li><a href="https://podcasts.apple.com/us/podcast/making-sense-with-sam-harris/id733163012">Making Sense</a> - Sam Harris debates big ideas.</li>
-        <li><a href="https://podcasts.apple.com/us/podcast/the-glenn-show/id505824976">The Glenn Show</a> - Glenn Loury tackles culture and policy.</li>
-        <li><a href="https://podcasts.apple.com/us/podcast/y-combinator-startup-podcast/id1236907421">Y Combinator</a> - Startup tips from Y Combinator.</li>
-        <li><a href="https://podcasts.apple.com/us/podcast/startalk-radio/id325404506">StarTalk Radio</a> - Neil deGrasse Tyson makes science fun.</li>
-        <li><a href="https://podcasts.apple.com/us/podcast/lex-fridman-podcast/id1434243584">Lex Fridman</a> - Deep talks on tech and science.</li>
-        <li><a href="https://podcasts.apple.com/us/podcast/lightcone-podcast/id1743860177">Lightcone</a> - Y Combinator’s take on innovation.</li>
-      </ul>
-    </div>
-    <div class="reading-section">
-      <h3>Currently Reading</h3>
-      <p><a href="https://www.amazon.com/Fooled-Randomness-Hidden-Markets-Incerto/dp/0812975219">Fooled by Randomness</a> by Nassim Nicholas Taleb (2001). Taleb’s trader insights on luck reshape how I view data.</p>
-      <h3>Recently Read</h3>
-      <ul>
-        <li><a href="https://www.amazon.com/Storytelling-Data-Visualization-Business-Professionals/dp/1119002257">Storytelling with Data</a> by Cole Nussbaumer Knaflic (2015). It teaches clear data stories for clients.</li>
-        <li><a href="https://www.amazon.com/Antifragile-Things-That-Disorder-Incerto/dp/0812979680">Antifragile</a> by Nassim Nicholas Taleb (2012). It shows how to thrive in chaos.</li>
-        <li><a href="https://www.amazon.com/Automating-Inequality-High-Tech-Profile-Police/dp/1250074312">Automating-Inequality</a> by Virginia Eubanks (2018). It reveals tech’s role in unfair systems.</li>
-        <li><a href="https://www.amazon.com/Basic-Economics-Thomas-Sowell/dp/0465060730">Basic-Economics</a> by Thomas Sowell (2014). Found in my dad’s office in 2017, I’ve read it eight times for its clear market lessons.</li>
-      </ul>
-    </div>
-  </div>
+Ever since I was a kid, I’ve been fascinated by two things: numbers and nature. My grandad, who spent most of his life around horses, had a big hand in that. He’d take me out to the old family stable, where the air always smelled like hay and leather, and teach me how to ride. But it wasn’t just about sitting on a horse. He’d explain the why behind everything. Like how the angle of your body affects the horse’s movement, or how a tiny shift in weight could make all the difference. It was math, but not the kind you’d find in a textbook. It was alive, practical, and tied to the rhythm of the animal beneath you. Those moments stuck with me, and they’re a big part of why I see the world the way I do today.
+
+These days, my work is about making sense of uncertainty. I use analysis, clear communication, and a level-headed approach to help people and businesses make better decisions. That’s what inspired me to start Quantidum, a data analytics consulting firm where we use advanced tools to solve real-world problems. It’s been a process of constant learning, and I’m still growing every day.
+
+But for me, it’s not just about work. I’ve always believed in giving back and creating opportunities for others. That’s why I’m building MansaPi, a non-profit focused on inspiring a love for STEM in students in Mali. Through education and hands-on projects, we’re helping young people discover the beauty of science, technology, engineering, and math—and hopefully sparking a passion for solving problems.
+
+Thank you for visiting my Blog. I hope you find both the beauty and power of data reflected in its content.
+<!-- ![Mariam](themes/ezhil/images/zmariam.png) -->
+
+<div style="border-bottom: 1px solid #ccc; margin: 20px 0;"></div>
+## Tech I use (among others)
+
+<div class="tool-icons">
+  <img src="/images/sql.png" alt="SQL Icon" width="48" height="48">
+  <img src="/images/python.png" alt="Python Icon" width="48" height="48">
+  <img src="/images/plotly.png" alt="Plotly Icon" width="120" height="48">
+  <img src="/images/streamlit.png" alt="Streamlit Icon" width="48" height="48">
+  <img src="/images/pandas.png" alt="Pandas Icon" width="100" height="48">
+  <img src="/images/numpy.png" alt="Numpy Icon" width="100" height="48">
+  <img src="/images/powerbi.png" alt="Power BI Icon" width="48" height="48">
+  <img src="/images/git.png" alt="Git Icon" width="48" height="48">
+  <img src="/images/jupyter.png" alt="Jupyter Icon" width="48" height="48">
+  <img src="/images/tableau.png" alt="Tableau Icon" width="48" height="48">
+  
 </div>
+<div style="border-bottom: 1px solid #ccc; margin: 20px 0;"></div>
 
-<style scoped>
-  body {
-    background: #f7f7f7 !important;
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
-    color: #2d3748 !important;
-  }
 
-  .about-plain {
-    max-width: 100%;
-    min-height: 100vh;
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
 
-  .bio-text {
-    max-width: 600px;
-    text-align: center;
-  }
+## My Go-to Podcasts
 
-  .bio-text p {
-    font-size: 0.8em;
-    color: #2d3748;
-    margin: 15px 0;
-    line-height: 1.7;
-  }
 
-  .bio-text p:first-of-type {
-    font-style: italic;
-    color: #4a5568;
-    position: relative;
-  }
+* [Heartwork](https://podcasts.apple.com/us/channel/roots-community-podcast/id6502764375) - Roots Community Podcast with Ustadh AbdelRahman Murphy
+* [Mufti Menk](https://podcasts.apple.com/us/podcast/mufti-menk/id592746186) - Muslim Central
+* [Sheikh Assim Al Hakeem](https://podcasts.apple.com/us/podcast/sheikh-assim-al-hakeem/id1723926769) - Sheikh Assim Al Hakeem
+* [How Can I Say This...](https://podcasts.apple.com/us/podcast/how-can-i-say-this/id1434883770) - Beth Buelow
+* [HBR IdeaCast](https://podcasts.apple.com/us/podcast/hbr-ideacast/id152022135) - Harvard Business Review
+* [Data Humanized](https://podcasts.apple.com/us/podcast/data-humanized-by-correlation-one/id1693484349) - Correlation One
+* [Eckhart Tolle: Essential Teachings](https://podcasts.apple.com/us/podcast/eckhart-tolle-essential-teachings/id1458654443) - Eckhart Tolle & Oprah Winfrey
+* [Hidden Brain](https://podcasts.apple.com/us/podcast/hidden-brain/id1028908750) - Shankar Vedantam
+* [Making Sense with Sam Harris](https://podcasts.apple.com/us/podcast/making-sense-with-sam-harris/id733163012) - Sam Harris
+* [The Glenn Show](https://podcasts.apple.com/us/podcast/the-glenn-show/id505824976) - Glenn Loury
+* [Y Combinator Startup Podcast](https://podcasts.apple.com/us/podcast/y-combinator-startup-podcast/id1236907421) - Y Combinator
+* [StarTalk Radio](https://podcasts.apple.com/us/podcast/startalk-radio/id325404506) - Neil deGrasse Tyson
+* [Lex Fridman Podcast](https://podcasts.apple.com/us/podcast/lex-fridman-podcast/id1434243584) - Lex Fridman
+* [Lightcone Podcast](https://podcasts.apple.com/us/podcast/lightcone-podcast/id1743860177) - Y Combinator
 
-  .bio-text p:first-of-type::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -5px;
-    width: 40px;
-    height: 1px;
-    background: #8b4513;
-  }
+<div style="border-bottom: 1px solid #ccc; margin: 20px 0;"></div>
 
-  .quote {
-    font-style: italic;
-    color: #4a5568;
-    font-size: 0.8em;
-    margin: 20px 0;
-    position: relative;
-  }
+## Currently Reading
 
-  .quote::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -5px;
-    width: 40px;
-    height: 1px;
-    background: #8b4513;
-  }
+- *[Fooled by Randomness](https://www.amazon.com/Fooled-Randomness-Hidden-Markets-Incerto/dp/0812975219), by [Nassim Nicholas Taleb](https://www.fooledbyrandomness.com/)*      
+  After reading Antifragile, I fell in love with Nassim's wit and insights into randomness and uncertainty. This book delves further into these themes, providing a fascinating exploration of luck, risk, and our understanding of probability.
 
-  .info-text {
-    max-width: 800px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
+## Recently Read
 
-  .tools-section, .podcasts-section, .reading-section {
-    text-align: center;
-  }
+- *[Storytelling with Data](https://www.amazon.com/Storytelling-Data-Visualization-Business-Professionals/dp/1119002257), by [Cole Nussbaumer Knaflic](https://www.linkedin.com/in/colenussbaumer/)*     
+  In this insightful book, Knafic explores the art of data storytelling, offering practical tips and techniques to effectively communicate data. It has reshaped how I present and visualize data in a compelling and understandable manner.
 
-  .tools-section h3, .podcasts-section h3, .reading-section h3 {
-    font-size: 0.85em;
-    color: #8b4513;
-    margin: 0 0 10px;
-    font-weight: 600;
-  }
+- *[Antifragile](https://www.amazon.com/Antifragile-Things-That-Disorder-Incerto/dp/0812979680), by [Nassim Nicholas Taleb](https://www.fooledbyrandomness.com/)*    
+  This book is a thought-provoking exploration of the concept of antifragility and its applications in various domains. Taleb's ideas challenge conventional wisdom and encourage us to embrace uncertainty.
 
-  .tool-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-    margin: 10px 0;
-  }
+- *[Automating Inequality](https://www.amazon.com/Automating-Inequality-High-Tech-Profile-Police/dp/1250074312), by [Virginia Eubanks](https://virginia-eubanks.com/about/)*    
+  In this eye-opening book, Eubanks sheds light on the societal implications of automated decision-making systems. She highlights the ways in which these systems can perpetuate and exacerbate inequality, especially for marginalized communities.
 
-  .tool-list img {
-    transition: opacity 0.3s ease;
-  }
+- *[Basic Economics](https://www.amazon.com/Basic-Economics-Thomas-Sowell/dp/0465060730)*, by [Thomas Sowel](https://www.hoover.org/profiles/thomas-sowell)    
+  Fun fact: I've read this book more than 7 times, and I'm not stopping there. I found it in my father's office for the first time and was immediately captivated by its insights into fundamental economic principles. It's a timeless read that deepens my understanding of economic concepts with each revisit.
 
-  .tool-list img:hover {
-    opacity: 0.7;
-  }
 
-  .podcasts-section ul, .reading-section ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
+<div style="border-bottom: 1px solid #ccc; margin: 20px 0;"></div>
 
-  .podcasts-section ul li, .reading-section ul li {
-    font-size: 0.75em;
-    color: #2d3748;
-    margin-bottom: 5px;
-  }
+<blockquote style="font-style: italic; border-left: 4px solid #ccc; padding-left: 10px; margin-top: 20px;">
+  “Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.”  
+  <br>― Rumi
+</blockquote>
 
-  .podcasts-section ul li a, .reading-section ul li a {
-    color: #8b4513;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-
-  .podcasts-section ul li a:hover, .reading-section ul li a:hover {
-    color: #5c2d0c;
-  }
-
-  .reading-section p {
-    font-size: 0.75em;
-    color: #2d3748;
-    margin: 5px 0;
-  }
-
-  /* Responsive Design */
-  @media (max-width: 640px) {
-    .about-plain {
-      padding: 20px 15px;
-    }
-
-    .bio-text, .info-text {
-      max-width: 100%;
-    }
-
-    .bio-text p, .quote, .podcasts-section ul li, .reading-section ul li, .reading-section p {
-      font-size: 0.7em;
-    }
-
-    .tools-section h3, .podcasts-section h3, .reading-section h3 {
-      font-size: 0.8em;
-    }
-
-    .tool-list img {
-      width: 20px;
-      height: 20px;
-    }
-
-    .tool-list img[alt="Plotly Icon"],
-    .tool-list img[alt="Pandas Icon"],
-    .tool-list img[alt="Numpy Icon"] {
-      width: 40px;
-      height: 20px;
-    }
-  }
-
-  /* Smooth Scroll */
-  html {
-    scroll-behavior: smooth;
-  }
-</style>
+<div style="border-bottom: 1px solid #ccc; margin: 20px 0;"></div>
