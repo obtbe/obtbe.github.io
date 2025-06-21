@@ -24,7 +24,7 @@ categories: [programming, python]
 
 <style scoped>
   body {
-    background: #f7f7f7 !important;
+    background: #fef2ea !important;
     margin: 0;
     padding: 0;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
