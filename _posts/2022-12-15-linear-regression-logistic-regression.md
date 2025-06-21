@@ -55,23 +55,26 @@ categories: [statistics, regression, analysis]
 
 <style scoped>
   body {
-    background: #fff9f6 !important;
+    background: #f7f7f7 !important; /* Matches approved style */
     margin: 0;
     padding: 0;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
     color: #2d3748 !important;
+    box-sizing: border-box !important;
   }
 
   .article-flow {
-    max-width: 670px; /* Increased by 70px from 600px */
-    margin: 0 auto 0 calc(50% - 300px - 100px); /* Untouched left shift at 100px */
+    max-width: 670px;
+    margin: 0 auto;
     padding: 80px 50px;
     display: block;
+    box-sizing: border-box !important;
   }
 
   .article-content {
-    max-width: 670px; /* Increased by 70px from 600px */
+    max-width: 670px;
     text-align: left;
+    box-sizing: border-box !important;
   }
 
   .article-content h2 {
@@ -135,14 +138,46 @@ categories: [statistics, regression, analysis]
     color: #8b4513;
   }
 
-  .article-content pre, .article-content code {
+  .article-content pre {
     background: #f4f4f4;
     padding: 12px;
     font-family: 'Fira Code', monospace;
     font-size: 0.95em;
-    display: block;
     margin: 20px 0;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: pre;
     text-align: left;
+    scrollbar-width: thin;
+    scrollbar-color: #8b4513 #f4f4f4;
+    box-sizing: border-box;
+  }
+
+  .article-content pre::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .article-content pre::-webkit-scrollbar-track {
+    background: #f4f4f4;
+  }
+
+  .article-content pre::-webkit-scrollbar-thumb {
+    background: #8b4513;
+    border-radius: 4px;
+  }
+
+  .article-content pre::-webkit-scrollbar-thumb:hover {
+    background: #5c2d0c;
+  }
+
+  .article-content code {
+    background: #f4f4f4;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.95em;
+    display: block;
+    max-width: 100%;
+    text-align: left;
+    box-sizing: border-box;
   }
 
   .article-content a {
@@ -157,17 +192,20 @@ categories: [statistics, regression, analysis]
 
   /* Override styles.scss title styles */
   .post-title, h1.post-title {
-    max-width: 670px !important; /* Increased by 70px from 600px */
-    margin: 0 auto 0 calc(50% - 300px - 100px) !important; /* Untouched left shift at 100px */
+    max-width: 670px !important;
+    margin: 0 auto !important;
     text-align: left !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    color: #2d3748 !important;
+    font-size: 1.5em !important;
   }
 
-  /* Responsive Design */
-  @media (max-width: 710px) { /* Adjusted from 640px for 670px width + padding */
+  /* Mobile Styles */
+  @media (max-width: 600px) {
     .article-flow {
       max-width: 100%;
-      margin: 0 0 0 100px; /* Untouched left shift at 100px */
-      padding: 50px 25px;
+      margin: 0 auto !important;
+      padding: 20px 15px !important;
     }
 
     .article-content {
@@ -183,12 +221,14 @@ categories: [statistics, regression, analysis]
     }
 
     .article-content pre, .article-content code {
-      font-size: 0.85em;
+      font-size: 0.8em;
+      padding: 10px;
     }
 
     .post-title, h1.post-title {
       max-width: 100% !important;
-      margin: 0 0 0 100px !important; /* Untouched left shift at 100px */
+      margin: 0 auto !important;
+      font-size: 1.3em !important;
     }
   }
 
