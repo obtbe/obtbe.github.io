@@ -3,11 +3,10 @@ layout: post
 title: What Running a Coding Boot Camp Taught Me About Programming
 date: 2022-09-02
 categories: [programming, python]
-# disqus: false
 ---
 
-<div class="blog-container">
-  <div class="blog-content">
+<div class="article-flow">
+  <div class="article-content">
     <p>I’ve always loved coding. As a data nerd, I spend my days tinkering with Python scripts and digging into datasets. So when I got the chance to run a six-week coding boot camp for beginners in early 2022, I was thrilled. I wanted to share my excitement for programming and, honestly, learn a bit myself. Teaching 25 students, most of whom had never written a line of code, showed me new angles on what it means to program. Here’s what stuck with me.</p>
 
     <h2>Practice Beats Theory Every Time</h2>
@@ -23,98 +22,147 @@ categories: [programming, python]
   </div>
 </div>
 
-<style>
+<style scoped>
   body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f5f7fa;
+    background: #f7f7f7 !important;
     margin: 0;
     padding: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    color: #2d3748 !important;
   }
 
-  .blog-container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-    overflow: hidden;
+  .article-flow {
+    max-width: 670px;
+    margin: 0 auto 0 calc(50% - 300px - 100px); /* Fixed 100px left shift */
+    padding: 80px 50px;
+    display: block;
   }
 
-  .blog-content {
-    padding: 30px;
+  .article-content {
+    max-width: 670px;
+    text-align: left;
   }
 
-  .blog-content h2 {
-    font-size: 1.8em;
-    color: #1a73e8;
-    margin-top: 30px;
+  .article-content h2 {
+    font-size: 1.1em;
+    color: #8b4513;
+    margin: 50px 0 20px;
+    font-weight: 600;
     position: relative;
-    padding-bottom: 10px;
   }
 
-  .blog-content h2::after {
+  .article-content h2::after {
     content: '';
     position: absolute;
-    bottom: 0;
     left: 0;
-    width: 50px;
-    height: 3px;
-    background: #1a73e8;
+    bottom: -5px;
+    width: 40px;
+    height: 1px;
+    background: #8b4513;
   }
 
-  .blog-content p {
-    font-size: 1.1em;
-    margin: 20px 0;
-    color: #444;
+  .article-content p {
+    font-size: 1em;
+    color: #2d3748;
+    margin: 25px 0;
+    line-height: 1.7;
   }
 
-  .blog-content p:first-of-type {
+  .article-content p:first-of-type {
     font-style: italic;
-    color: #555;
-    border-left: 4px solid #1a73e8;
-    padding-left: 20px;
+    color: #4a5568;
+    position: relative;
   }
 
-  /* Hover Animation for Headings */
-  .blog-content h2:hover {
-    color: #005bb5;
+  .article-content p:first-of-type::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: #8b4513;
+  }
+
+  .article-content ul {
+    margin: 25px 0;
+    padding-left: 20px;
+    list-style: none;
+  }
+
+  .article-content ul li {
+    font-size: 0.95em;
+    color: #2d3748;
+    margin-bottom: 12px;
+    position: relative;
+  }
+
+  .article-content ul li::before {
+    content: '•';
+    position: absolute;
+    left: -15px;
+    color: #8b4513;
+  }
+
+  .article-content pre, .article-content code {
+    background: #f4f4f4;
+    padding: 12px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.95em;
+    display: block;
+    margin: 20px 0;
+    text-align: left;
+  }
+
+  .article-content a {
+    color: #8b4513;
+    text-decoration: none;
     transition: color 0.3s ease;
   }
 
+  .article-content a:hover {
+    color: #5c2d0c;
+  }
+
+  /* Override styles.scss title styles */
+  .post-title, h1.post-title {
+    max-width: 670px !important;
+    margin: 0 auto 0 calc(50% - 300px - 100px) !important; /* Fixed 100px left shift */
+    text-align: left !important;
+  }
+
   /* Responsive Design */
-  @media (max-width: 600px) {
-    .blog-container {
-      margin: 20px;
-      padding: 15px;
+  @media (max-width: 710px) {
+    .article-flow {
+      max-width: 100%;
+      margin: 0 0 0 100px; /* Fixed 100px left shift */
+      padding: 50px 25px;
     }
 
-    .blog-content {
-      padding: 20px;
+    .article-content {
+      max-width: 100%;
     }
 
-    .blog-content h2 {
-      font-size: 1.5em;
-    }
-
-    .blog-content p {
+    .article-content h2 {
       font-size: 1em;
+    }
+
+    .article-content p, .article-content ul li {
+      font-size: 0.9em;
+    }
+
+    .article-content pre, .article-content code {
+      font-size: 0.85em;
+    }
+
+    .post-title, h1.post-title {
+      max-width: 100% !important;
+      margin: 0 0 0 100px !important; /* Fixed 100px left shift */
     }
   }
 
   /* Smooth Scroll */
   html {
     scroll-behavior: smooth;
-  }
-
-  /* Code Block Styling (for potential code snippets) */
-  pre, code {
-    background: #f4f4f4;
-    border-radius: 6px;
-    padding: 10px;
-    font-family: 'Fira Code', monospace;
-    font-size: 0.95em;
   }
 </style>
