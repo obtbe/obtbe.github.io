@@ -63,7 +63,7 @@ categories: [analysis, sql, data]
 
 <style scoped>
   body {
-    background: #fff9f6 !important;
+    background: #f7f7f7 !important; /* Reverted to match approved style */
     margin: 0;
     padding: 0;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
@@ -143,13 +143,43 @@ categories: [analysis, sql, data]
     color: #8b4513;
   }
 
-  .article-content pre, .article-content code {
+  .article-content pre {
     background: #f4f4f4;
     padding: 12px;
     font-family: 'Fira Code', monospace;
     font-size: 0.95em;
-    display: block;
     margin: 20px 0;
+    max-width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: pre; /* Prevent wrapping */
+    text-align: left;
+    scrollbar-width: thin; /* Thin scrollbar for Firefox */
+    scrollbar-color: #8b4513 #f4f4f4; /* Brown thumb, gray track */
+  }
+
+  .article-content pre::-webkit-scrollbar {
+    height: 8px; /* Thin scrollbar for WebKit browsers */
+  }
+
+  .article-content pre::-webkit-scrollbar-track {
+    background: #f4f4f4; /* Match code background */
+  }
+
+  .article-content pre::-webkit-scrollbar-thumb {
+    background: #8b4513; /* Brown thumb */
+    border-radius: 4px;
+  }
+
+  .article-content pre::-webkit-scrollbar-thumb:hover {
+    background: #5c2d0c; /* Darker brown on hover */
+  }
+
+  .article-content code {
+    background: #f4f4f4;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.95em;
+    display: block;
+    max-width: 100%;
     text-align: left;
   }
 
