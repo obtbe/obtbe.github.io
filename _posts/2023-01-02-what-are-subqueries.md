@@ -83,23 +83,26 @@ SET Salary = (SELECT AVG(Salary) FROM Employees)
 
 <style scoped>
   body {
-    background: #fff9f6 !important; /* Reverted to match approved style */
+    background: #f7f7f7 !important; /* Matches approved style */
     margin: 0;
     padding: 0;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
     color: #2d3748 !important;
+    box-sizing: border-box !important;
   }
 
   .article-flow {
     max-width: 670px;
-    margin: 0 auto 0 calc(50% - 300px - 100px); /* Fixed 100px left shift */
+    margin: 0 auto;
     padding: 80px 50px;
     display: block;
+    box-sizing: border-box !important;
   }
 
   .article-content {
     max-width: 670px;
     text-align: left;
+    box-sizing: border-box !important;
   }
 
   .article-content h2 {
@@ -177,28 +180,29 @@ SET Salary = (SELECT AVG(Salary) FROM Employees)
     font-size: 0.95em;
     margin: 20px 0;
     max-width: 100%;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: pre; /* Prevent wrapping */
+    overflow-x: auto;
+    white-space: pre;
     text-align: left;
-    scrollbar-width: thin; /* Thin scrollbar for Firefox */
-    scrollbar-color: #8b4513 #f4f4f4; /* Brown thumb, gray track */
+    scrollbar-width: thin;
+    scrollbar-color: #8b4513 #f4f4f4;
+    box-sizing: border-box;
   }
 
   .article-content pre::-webkit-scrollbar {
-    height: 8px; /* Thin scrollbar for WebKit browsers */
+    height: 8px;
   }
 
   .article-content pre::-webkit-scrollbar-track {
-    background: #f4f4f4; /* Match code background */
+    background: #f4f4f4;
   }
 
   .article-content pre::-webkit-scrollbar-thumb {
-    background: #8b4513; /* Brown thumb */
+    background: #8b4513;
     border-radius: 4px;
   }
 
   .article-content pre::-webkit-scrollbar-thumb:hover {
-    background: #5c2d0c; /* Darker brown on hover */
+    background: #5c2d0c;
   }
 
   .article-content code {
@@ -208,6 +212,7 @@ SET Salary = (SELECT AVG(Salary) FROM Employees)
     display: block;
     max-width: 100%;
     text-align: left;
+    box-sizing: border-box;
   }
 
   .article-content a {
@@ -223,16 +228,19 @@ SET Salary = (SELECT AVG(Salary) FROM Employees)
   /* Override styles.scss title styles */
   .post-title, h1.post-title {
     max-width: 670px !important;
-    margin: 0 auto 0 calc(50% - 300px - 100px) !important; /* Fixed 100px left shift */
+    margin: 0 auto !important;
     text-align: left !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    color: #2d3748 !important;
+    font-size: 1.5em !important;
   }
 
-  /* Responsive Design */
-  @media (max-width: 710px) {
+  /* Mobile Styles */
+  @media (max-width: 600px) {
     .article-flow {
       max-width: 100%;
-      margin: 0 0 0 100px; /* Fixed 100px left shift */
-      padding: 50px 25px;
+      margin: 0 auto !important;
+      padding: 20px 15px !important;
     }
 
     .article-content {
@@ -252,12 +260,14 @@ SET Salary = (SELECT AVG(Salary) FROM Employees)
     }
 
     .article-content pre, .article-content code {
-      font-size: 0.85em;
+      font-size: 0.8em;
+      padding: 10px;
     }
 
     .post-title, h1.post-title {
       max-width: 100% !important;
-      margin: 0 0 0 100px !important; /* Fixed 100px left shift */
+      margin: 0 auto !important;
+      font-size: 1.3em !important;
     }
   }
 
