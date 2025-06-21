@@ -55,7 +55,7 @@ categories: [statistics, regression, analysis]
 
 <style scoped>
   body {
-    background: #fef2ea !important;
+    background: #fff9f6 !important;
     margin: 0;
     padding: 0;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
