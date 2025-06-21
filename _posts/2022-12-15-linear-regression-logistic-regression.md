@@ -64,20 +64,20 @@ categories: [statistics, regression, analysis]
 
   .article-flow {
     max-width: 100%;
-    padding: 40px 20px;
+    padding: 60px 40px;
     display: flex;
     justify-content: center;
   }
 
   .article-content {
-    max-width: 800px;
+    max-width: 700px;
     text-align: left;
   }
 
   .article-content h2 {
-    font-size: 0.95em;
+    font-size: 1em;
     color: #8b4513;
-    margin: 30px 0 10px;
+    margin: 40px 0 15px;
     font-weight: 600;
     position: relative;
   }
@@ -93,9 +93,9 @@ categories: [statistics, regression, analysis]
   }
 
   .article-content p {
-    font-size: 0.8em;
+    font-size: 0.9em;
     color: #2d3748;
-    margin: 15px 0;
+    margin: 20px 0;
     line-height: 1.7;
   }
 
@@ -116,15 +116,15 @@ categories: [statistics, regression, analysis]
   }
 
   .article-content ul {
-    margin: 15px 0;
+    margin: 20px 0;
     padding-left: 20px;
     list-style: none;
   }
 
   .article-content ul li {
-    font-size: 0.75em;
+    font-size: 0.85em;
     color: #2d3748;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     position: relative;
   }
 
@@ -137,11 +137,11 @@ categories: [statistics, regression, analysis]
 
   .article-content pre, .article-content code {
     background: #f4f4f4;
-    padding: 8px;
+    padding: 10px;
     font-family: 'Fira Code', monospace;
-    font-size: 0.75em;
+    font-size: 0.85em;
     display: block;
-    margin: 10px 0;
+    margin: 15px 0;
     text-align: left;
   }
 
@@ -158,7 +158,7 @@ categories: [statistics, regression, analysis]
   /* Responsive Design */
   @media (max-width: 640px) {
     .article-flow {
-      padding: 20px 15px;
+      padding: 40px 20px;
     }
 
     .article-content {
@@ -166,15 +166,15 @@ categories: [statistics, regression, analysis]
     }
 
     .article-content h2 {
-      font-size: 0.9em;
+      font-size: 0.95em;
     }
 
     .article-content p, .article-content ul li {
-      font-size: 0.7em;
+      font-size: 0.85em;
     }
 
     .article-content pre, .article-content code {
-      font-size: 0.7em;
+      font-size: 0.8em;
     }
   }
 
