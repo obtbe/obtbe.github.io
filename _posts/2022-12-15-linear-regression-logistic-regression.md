@@ -64,9 +64,9 @@ categories: [statistics, regression, analysis]
 
   .article-flow {
     max-width: 600px;
-    margin: 0 auto 0 calc(50% - 300px - 25px); /* Shift left by 25px */
+    margin: 0 auto 0 calc(50% - 300px - 30px); /* Shift left by 30px */
     padding: 80px 50px;
-    display: block; /* Remove flex to avoid centering issues */
+    display: block;
   }
 
   .article-content {
@@ -158,7 +158,7 @@ categories: [statistics, regression, analysis]
   /* Override styles.scss title styles */
   .post-title, h1.post-title {
     max-width: 600px !important;
-    margin: 0 auto 0 calc(50% - 300px - 25px) !important; /* Shift left by 25px */
+    margin: 0 auto 0 calc(50% - 300px - 30px) !important; /* Shift left by 30px */
     text-align: left !important;
   }
 
@@ -166,7 +166,7 @@ categories: [statistics, regression, analysis]
   @media (max-width: 640px) {
     .article-flow {
       max-width: 100%;
-      margin: 0 0 0 25px; /* Maintain 25px left shift */
+      margin: 0 0 0 30px; /* Maintain 30px left shift */
       padding: 50px 25px;
     }
 
@@ -188,7 +188,7 @@ categories: [statistics, regression, analysis]
 
     .post-title, h1.post-title {
       max-width: 100% !important;
-      margin: 0 0 0 25px !important; /* Maintain 25px left shift */
+      margin: 0 0 0 30px !important; /* Maintain 30px left shift */
     }
   }
 
