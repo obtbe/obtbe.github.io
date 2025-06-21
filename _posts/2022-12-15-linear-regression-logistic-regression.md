@@ -2,7 +2,7 @@
 layout: post
 title: Linear Regression vs Logistic Regression - Understanding the Differences
 date: 2022-12-15 12:00:00
-categories: [statistics, regression, regression-analysis]
+categories: [statistics, regression, analysis]
 ---
 
 <div class="article-flow">
@@ -11,11 +11,11 @@ categories: [statistics, regression, regression-analysis]
 
     <h2>Linear Regression: Predicting Numbers</h2>
     <p>Linear regression predicts numbers by finding a straight-line relationship between inputs and an output. Picture yourself running a lemonade stand, trying to predict daily sales based on the day’s temperature. Hotter days might mean more customers, and linear regression can model this.</p>
-    <p>Imagine you track 40 days, recording temperature in degrees Fahrenheit and lemonade cups sold. On a 65°F day, you sell 120 cups, but on an 85°F day, you sell 160 cups. Linear regression gives a line that fits this pattern. The equation is:</p>
+    <p>Imagine you track 40 days, recording temperature in degrees Fahrenheit and lemonade cups sold. On a 65°F day, you sell 120 cups, but on an 85°F day, you sell 160 cups. Linear regression creates a line that fits this pattern. The equation is:</p>
     <pre><code>Cups Sold = b0 + b1 * Temperature</code></pre>
     <p>Here, b0 is the starting point (cups sold if temperature were 0°F), and b1 is the slope (extra cups per degree). Your data might give:</p>
     <pre><code>Cups Sold = 30 + 1.5 * Temperature</code></pre>
-    <p>For a 70°F day, you’d predict 30 + 1.5 * 70 = 135 cups. The math minimizes squared errors between actual sales and the line’s predictions, called least squares. For a 65°F day with 120 cups sold, the prediction is 30 + 1.5 * 65 = 127.5 cups, so the error is 120 - 127.5 = -7.5. Square it (7.5^2 = 56.25), sum errors across days, and adjust b0 and b1 to make the sum small.</p>
+    <p>For a 70°F day, you’d predict 30 + 1.5 * 70 = 135 cups. The math minimizes the squared differences between actual sales and the line’s predictions, called least squares. For a 65°F day with 120 cups sold, the prediction is 30 + 1.5 * 65 = 127.5 cups, so the error is 120 - 127.5 = -7.5. Square it (7.5^2 = 56.25), sum all errors across days, and adjust b0 and b1 to make the sum as small as possible.</p>
     <p>Another example: predicting a runner’s 5K time based on weekly training hours. Data from 60 runners shows 10 hours per week gives a 25-minute finish, while 15 hours gives 22 minutes. The model might be:</p>
     <pre><code>Finish Time = 30 - 0.5 * Training Hours</code></pre>
     <p>A runner training 12 hours would finish in 30 - 0.5 * 12 = 24 minutes. Linear regression works for number predictions, assuming a straight-line relationship and evenly spread errors.</p>
@@ -64,7 +64,7 @@ categories: [statistics, regression, regression-analysis]
 
   .article-flow {
     max-width: 670px; /* Increased by 70px from 600px */
-    margin: 0 auto 0 calc(50% - 335px - 100px); /* Fixed left shift at 100px, adjusted for new width */
+    margin: 0 auto 0 calc(50% - 300px - 100px); /* Untouched left shift at 100px */
     padding: 80px 50px;
     display: block;
   }
@@ -158,15 +158,15 @@ categories: [statistics, regression, regression-analysis]
   /* Override styles.scss title styles */
   .post-title, h1.post-title {
     max-width: 670px !important; /* Increased by 70px from 600px */
-    margin: 0 auto 0 calc(50% - 335px - 100px) !important; /* Fixed left shift at 100px, adjusted for new width */
+    margin: 0 auto 0 calc(50% - 300px - 100px) !important; /* Untouched left shift at 100px */
     text-align: left !important;
   }
 
   /* Responsive Design */
-  @media (max-width: 710px) { /* Adjusted from 640px to account for 670px width + padding */
+  @media (max-width: 710px) { /* Adjusted from 640px for 670px width + padding */
     .article-flow {
       max-width: 100%;
-      margin: 0 0 0 100px; /* Maintain 100px left shift */
+      margin: 0 0 0 100px; /* Untouched left shift at 100px */
       padding: 50px 25px;
     }
 
@@ -188,7 +188,7 @@ categories: [statistics, regression, regression-analysis]
 
     .post-title, h1.post-title {
       max-width: 100% !important;
-      margin: 0 0 0 100px !important; /* Maintain 100px left shift */
+      margin: 0 0 0 100px !important; /* Untouched left shift at 100px */
     }
   }
 
