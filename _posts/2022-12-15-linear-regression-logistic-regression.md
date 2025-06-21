@@ -63,7 +63,8 @@ categories: [statistics, regression, analysis]
   }
 
   .article-flow {
-    max-width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
     padding: 80px 50px;
     display: flex;
     justify-content: center;
@@ -155,9 +156,18 @@ categories: [statistics, regression, analysis]
     color: #5c2d0c;
   }
 
+  /* Override potential styles.scss title styles */
+  .post-title, h1.post-title {
+    max-width: 600px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: left !important;
+  }
+
   /* Responsive Design */
   @media (max-width: 640px) {
     .article-flow {
+      max-width: 100%;
       padding: 50px 25px;
     }
 
@@ -175,6 +185,10 @@ categories: [statistics, regression, analysis]
 
     .article-content pre, .article-content code {
       font-size: 0.85em;
+    }
+
+    .post-title, h1.post-title {
+      max-width: 100% !important;
     }
   }
 
