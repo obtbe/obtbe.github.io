@@ -83,7 +83,7 @@ SET Salary = (SELECT AVG(Salary) FROM Employees)
 
 <style scoped>
   body {
-    background: #f7f7f7 !important; /* Reverted to match approved style */
+    background: #fff9f6 !important; /* Reverted to match approved style */
     margin: 0;
     padding: 0;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
