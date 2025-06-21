@@ -63,7 +63,7 @@ categories: [analysis, sql, data]
 
 <style scoped>
   body {
-    background: #f7f7f7 !important;
+    background: #fff9f6 !important;
     margin: 0;
     padding: 0;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
