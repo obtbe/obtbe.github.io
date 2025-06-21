@@ -5,8 +5,8 @@ date: 2022-12-15 12:00:00
 categories: [statistics, regression, analysis]
 ---
 
-<div class="blog-container">
-  <div class="blog-content">
+<div class="article-flow">
+  <div class="article-content">
     <p>Data analysis often uses two tools: linear regression and logistic regression. They sound alike, but they answer different questions. This article breaks down their differences with clear examples and the math behind them, so you can choose the right one for your data.</p>
 
     <h2>Linear Regression: Predicting Numbers</h2>
@@ -53,110 +53,128 @@ categories: [statistics, regression, analysis]
   </div>
 </div>
 
-<style>
+<style scoped>
   body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f5f7fa;
+    background: #f7f7f7 !important;
     margin: 0;
     padding: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    color: #2d3748 !important;
   }
 
-  .blog-container {
+  .article-flow {
+    max-width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .article-content {
     max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-    overflow: hidden;
-  }
-
-  .blog-content {
-    padding: 30px;
-  }
-
-  .blog-content h2 {
-    font-size: 1.8em;
-    color: #1a73e8;
-    margin-top: 30px;
-    position: relative;
-    padding-bottom: 10px;
-  }
-
-  .blog-content h2::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 50px;
-    projectors: linear-gradient(90deg, #1a73e8, transparent);
-  }
-
-  .blog-content p {
-    font-size: 1.1em;
-    margin: 20px 0;
-    color: #444;
-  }
-
-  .blog-content p:first-of-type {
-    font-style: italic;
-    color: #555;
-    border-left: 4px solid #1a73e8;
-    padding-left: 20px;
-  }
-
-  .blog-content ul {
-    margin: 20px 0;
-    padding-left: 25px;
-  }
-
-  .blog-content ul li {
-    margin-bottom: 10px;
-    font-size: 1.1em;
-    color: #444;
-  }
-
-  /* Code Block Styling for Equations */
-  pre, code {
-    background: #f4f4f4;
-    border-radius: 6px;
-    padding: 10px;
-    font-family: 'Fira Code', monospace;
-    font-size: 0.95em;
-    display: block;
-    margin: 15px 0;
     text-align: left;
   }
 
-  /* Hover Animation for Headings */
-  .blog-content h2:hover {
-    color: #005bb5;
+  .article-content h2 {
+    font-size: 0.95em;
+    color: #8b4513;
+    margin: 30px 0 10px;
+    font-weight: 600;
+    position: relative;
+  }
+
+  .article-content h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 40px;
+    height: 1px;
+    background: #8b4513;
+  }
+
+  .article-content p {
+    font-size: 0.8em;
+    color: #2d3748;
+    margin: 15px 0;
+    line-height: 1.7;
+  }
+
+  .article-content p:first-of-type {
+    font-style: italic;
+    color: #4a5568;
+    position: relative;
+  }
+
+  .article-content p:first-of-type::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: #8b4513;
+  }
+
+  .article-content ul {
+    margin: 15px 0;
+    padding-left: 20px;
+    list-style: none;
+  }
+
+  .article-content ul li {
+    font-size: 0.75em;
+    color: #2d3748;
+    margin-bottom: 8px;
+    position: relative;
+  }
+
+  .article-content ul li::before {
+    content: '•';
+    position: absolute;
+    left: -15px;
+    color: #8b4513;
+  }
+
+  .article-content pre, .article-content code {
+    background: #f4f4f4;
+    padding: 8px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.75em;
+    display: block;
+    margin: 10px 0;
+    text-align: left;
+  }
+
+  .article-content a {
+    color: #8b4513;
+    text-decoration: none;
     transition: color 0.3s ease;
   }
 
+  .article-content a:hover {
+    color: #5c2d0c;
+  }
+
   /* Responsive Design */
-  @media (max-width: 600px) {
-    .blog-container {
-      margin: 20px;
-      padding: 15px;
+  @media (max-width: 640px) {
+    .article-flow {
+      padding: 20px 15px;
     }
 
-    .blog-content {
-      padding: 20px;
+    .article-content {
+      max-width: 100%;
     }
 
-    .blog-content h2 {
-      font-size: 1.5em;
-    }
-
-    .blog-content p, .blog-content ul li {
-      font-size: 1em;
-    }
-
-    pre, code {
+    .article-content h2 {
       font-size: 0.9em;
+    }
+
+    .article-content p, .article-content ul li {
+      font-size: 0.7em;
+    }
+
+    .article-content pre, .article-content code {
+      font-size: 0.7em;
     }
   }
 
