@@ -13,23 +13,17 @@ Linear regression predicts **numbers** by finding a straight-line relationship b
 
 Imagine you track 40 days, recording temperature in degrees Fahrenheit and lemonade cups sold. On a 65°F day, you sell 120 cups, but on an 85°F day, you sell 160 cups. Linear regression creates a line that fits this pattern. The equation is:
 
-$$
-\text{Cups Sold} = b_0 + b_1 \cdot \text{Temperature}
-$$
+$$ \text{Cups Sold} = b_0 + b_1 \cdot \text{Temperature} $$
 
 Here, $b_0$ is the intercept (cups sold if temperature were 0°F), and $b_1$ is the slope (extra cups per degree). Your data might give:
 
-$$
-\text{Cups Sold} = 30 + 1.5 \cdot \text{Temperature}
-$$
+$$ \text{Cups Sold} = 30 + 1.5 \cdot \text{Temperature} $$
 
 For a 70°F day, you'd predict $30 + 1.5 \cdot 70 = 135$ cups. The math minimizes the squared differences between actual sales and the line's predictions, called **least squares**. For a 65°F day with 120 cups sold, the prediction is $30 + 1.5 \cdot 65 = 127.5$ cups, so the error is $120 - 127.5 = -7.5$. Square it ($(-7.5)^2 = 56.25$), sum all errors across days, and adjust $b_0$ and $b_1$ to minimize this sum.
 
 Another example: predicting a runner's 5K time based on weekly training hours. Data from 60 runners shows 10 hours per week gives a 25-minute finish, while 15 hours gives 22 minutes. The model might be:
 
-$$
-\text{Finish Time} = 30 - 0.5 \cdot \text{Training Hours}
-$$
+$$ \text{Finish Time} = 30 - 0.5 \cdot \text{Training Hours} $$
 
 A runner training 12 hours would finish in $30 - 0.5 \cdot 12 = 24$ minutes. Linear regression works for number predictions, assuming a straight-line relationship and evenly spread errors.
 
@@ -39,23 +33,17 @@ Logistic regression predicts whether something happens, like if a moviegoer buys
 
 Suppose a theater tracks 150 customers, noting their age and whether they bought popcorn. A 25-year-old has a 40% chance of buying, while a 50-year-old has a 75% chance. The logistic regression equation is:
 
-$$
-P(\text{Buy Popcorn}) = \frac{1}{1 + e^{-(b_0 + b_1 \cdot \text{Age})}}
-$$
+$$ P(\text{Buy Popcorn}) = \frac{1}{1 + e^{-(b_0 + b_1 \cdot \text{Age})}} $$
 
 Here, $P(\text{Buy Popcorn})$ is the probability, $b_0$ is the intercept, and $b_1$ adjusts how age affects the chance. Your data might give:
 
-$$
-P(\text{Buy Popcorn}) = \frac{1}{1 + e^{-(-3.5 + 0.08 \cdot \text{Age})}}
-$$
+$$ P(\text{Buy Popcorn}) = \frac{1}{1 + e^{-(-3.5 + 0.08 \cdot \text{Age})}} $$
 
 For a 30-year-old, calculate $-3.5 + 0.08 \cdot 30 = -1.1$, so $e^{-(-1.1)} = e^{1.1} \approx 3.004$. Then, $P(\text{Buy Popcorn}) = \frac{1}{1 + 3.004} \approx 0.25$, or a 25% chance. If the probability is above 0.5, predict "yes"; otherwise, "no". The math adjusts $b_0$ and $b_1$ to **maximize the likelihood** of matching actual yes-or-no choices.
 
 Another example: predicting if a plant survives based on weekly watering days. Data from 80 plants shows 2 days of watering gives a 30% survival chance, while 5 days gives 80%. The model might be:
 
-$$
-P(\text{Survive}) = \frac{1}{1 + e^{-(-4 + 0.9 \cdot \text{Watering Days})}}
-$$
+$$ P(\text{Survive}) = \frac{1}{1 + e^{-(-4 + 0.9 \cdot \text{Watering Days})}} $$
 
 A plant watered 3 days has a probability of $\frac{1}{1 + e^{-(-4 + 0.9 \cdot 3)}} \approx 0.43$, or 43%, so predict "no". Logistic regression fits yes-or-no outcomes like these.
 
@@ -67,9 +55,7 @@ Linear and logistic regression tackle different tasks. Here's a breakdown:
 - **Inputs**: Both use numbers or categories (e.g., temperature or weekday/weekend), but logistic regression often prefers simpler inputs for clear probability curves.
 - **Math**: Linear regression assumes a straight line and minimizes squared errors, calculated as:
 
-$$
-\text{Error} = \sum (\text{Actual} - \text{Predicted})^2
-$$
+$$ \text{Error} = \sum (\text{Actual} - \text{Predicted})^2 $$
 
 Logistic regression assumes a **curved relationship** and maximizes the likelihood of correct yes-or-no predictions.
 
@@ -79,9 +65,7 @@ Logistic regression assumes a **curved relationship** and maximizes the likeliho
 
 Use **linear regression** for number predictions. For example, a bakery might predict muffin sales based on the day's foot traffic. Data from 50 days shows 200 visitors yield 80 muffins sold, while 300 visitors yield 110. The model could be:
 
-$$
-\text{Muffins Sold} = 20 + 0.3 \cdot \text{Visitors}
-$$
+$$ \text{Muffins Sold} = 20 + 0.3 \cdot \text{Visitors} $$
 
 For 250 visitors, predict $20 + 0.3 \cdot 250 = 95$ muffins. Or use it to estimate a house's energy bill based on its size, like a 1,500-square-foot house costing $120 monthly.
 

@@ -1,3 +1,4 @@
+
 #
 # This file contains configuration flags to customize your site
 #
@@ -31,12 +32,11 @@ footer-links:
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
-
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
 disqus:
 
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+# Enter your Google Analytics web tracking code (e.g. UA-29433314-2) to activate tracking
 google_analytics: UA-29433314-11
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
@@ -62,6 +62,8 @@ version: v1.2.0
 kramdown:
   # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
+  # Enable MathJax for LaTeX rendering
+  math_engine: mathjax
   # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
   syntax_highlighter: rouge
   syntax_highlighter_opts:
