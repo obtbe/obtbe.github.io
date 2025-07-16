@@ -8,6 +8,16 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
 
+    <!-- MathJax configuration for inline and display math -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']],
+          processEscapes: true
+        }
+      };
+    </script>
     <!-- MathJax for rendering LaTeX equations -->
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 

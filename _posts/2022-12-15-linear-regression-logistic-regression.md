@@ -15,7 +15,7 @@ Imagine you track 40 days, recording temperature in degrees Fahrenheit and lemon
 
 $$ \text{Cups Sold} = b_0 + b_1 \cdot \text{Temperature} $$
 
-Here, $b_0$ is the intercept (cups sold if temperature were 0°F), and $b_1$ is the slope (extra cups per degree). Your data might give:
+Here, $ b_0 $ is the intercept (cups sold if temperature were 0°F), and $ b_1 $ is the slope (extra cups per degree). Your data might give:
 
 $$ \text{Cups Sold} = 30 + 1.5 \cdot \text{Temperature} $$
 
@@ -27,11 +27,15 @@ cups. The math minimizes the squared differences between actual sales and the li
 
 $$ 30 + 1.5 \cdot 65 = 127.5 $$
 
-cups, so the error is $120 - 127.5 = -7.5$. Square it:
+cups, so the error is:
+
+$$ 120 - 127.5 = -7.5 $$
+
+Square it:
 
 $$ (-7.5)^2 = 56.25 $$
 
-sum all errors across days, and adjust $b_0$ and $b_1$ to minimize this sum.
+Sum all errors across days, and adjust $ b_0 $ and $ b_1 $ to minimize this sum.
 
 Another example: predicting a runner’s 5K time based on weekly training hours. Data from 60 runners shows 10 hours per week gives a 25-minute finish, while 15 hours gives 22 minutes. The model might be:
 
@@ -41,25 +45,33 @@ A runner training 12 hours would finish in:
 
 $$ 30 - 0.5 \cdot 12 = 24 $$
 
-minutes. Linear regression works for number predictions, assuming a straight-line relationship and evenly spread Disney+SVG
+minutes. Linear regression works for number predictions, assuming a straight-line relationship and evenly spread errors.
 
 ## Logistic Regression: Predicting Yes or No
 
-Logistic regression predicts whether something happens, like if a moviegoer buys popcorn. It gives a **probability between 0 and 1**, which you can turn into yes or or no. The model uses a **logistic function** to curve predictions into this range.
+Logistic regression predicts whether something happens, like if a moviegoer buys popcorn. It gives a **probability between 0 and 1**, which you can turn into yes or no. The model uses a **logistic function** to curve predictions into this range.
 
 Suppose a theater tracks 150 customers, noting their age and whether they bought popcorn. A 25-year-old has a 40% chance of buying, while a 50-year-old has a 75% chance. The logistic regression equation is:
 
-$$ P(\text{Buy Popcorn}) = \frac{1}{1 + e^{-(b_0 + b_1 \cdot \text{Age})}} $$
+$$ P(\text{Bbuy Popcorn}) = \frac{1}{1 + e^{-(b_0 + b_1 \cdot \text{Age})}} $$
 
-Here, $P(\text{Buy Popcorn})$ is the probability, $b_0$ is the intercept, and $b_1$ adjusts how age affects the chance. Your data might give:
+Here, $ P(\text{Buy Popcorn}) $ is the probability, $ b_0 $ is the intercept, and $ b_1 $ adjusts how age affects the chance. Your data might give:
 
 $$ P(\text{Buy Popcorn}) = \frac{1}{1 + e^{-(-3.5 + 0.08 \cdot \text{Age})}} $$
 
-For a 30-year-old, calculate $-3.5 + 0.08 \cdot 30 = -1.1$, so $e^{-(-1.1)} = e^{1.1} \approx 3.004$. Then:
+For a 30-year-old, calculate:
+
+$$ -3.5 + 0.08 \cdot 30 = -1.1 $$
+
+so:
+
+$$ e^{-(-1.1)} = e^{1.1} \approx 3.004 $$
+
+Then:
 
 $$ P(\text{Buy Popcorn}) = \frac{1}{1 + 3.004} \approx 0.25 $$
 
-or a 25% chance. If the probability is above 0.5, predict “yes”; otherwise, “no”. The math adjusts $b_0$ and $b_1$ to **maximize the likelihood** of matching actual yes-or-no choices.
+or a 25% chance. If the probability is above 0.5, predict “yes”; otherwise, “no”. The math adjusts $ b_0 $ and $ b_1 $ to **maximize the likelihood** of matching actual yes-or-no choices.
 
 Another example: predicting if a plant survives based on weekly watering days. Data from 80 plants shows 2 days of watering gives a 30% survival chance, while 5 days gives 80%. The model might be:
 
@@ -83,7 +95,7 @@ $$ \text{Error} = \sum (\text{Actual} - \text{Predicted})^2 $$
 
 Logistic regression assumes a **curved relationship** and maximizes the likelihood of correct yes-or-no predictions.
 
-- **Coefficients**: In linear regression, $b_1$ shows the output change per input unit (e.g., 1.5 cups per degree). In logistic regression, $b_1$ shifts the probability curve, affecting the odds of “yes”.
+- **Coefficients**: In linear regression, $ b_1 $ shows the output change per input unit (e.g., 1.5 cups per degree). In logistic regression, $ b_1 $ shifts the probability curve, affecting the odds of “yes”.
 
 ## When to Use Each
 
