@@ -1,4 +1,3 @@
-```markdown
 ---
 layout: post
 title: What Are Subqueries in SQL - A Practical Guide
@@ -105,4 +104,3 @@ Subqueries aren’t your only option. Joins can often do the same job. Here’s 
 For example, to find baristas with above-average sales, a subquery works fine for 1,000 rows. For 1 million rows, a join with a pre-computed average table is quicker. Test both to see what fits your data.
 
 Subqueries are like a Swiss Army knife for SQL. They let you filter, calculate, and update with precision, whether you’re finding top customers or adjusting salaries. But they can be slow or tricky, so use them wisely. With our coffee shop examples, you’ve seen how they work. What question will you ask your data next? Grab your SQL editor and try a subquery today.
-```
