@@ -19,7 +19,7 @@ FROM Sales
 WHERE Total > (SELECT AVG(Total) FROM Sales)
 ```
 
-The subquery `(SELECT AVG(Total) FROM Sales)` finds the average sale amount, say $5.50. The outer query then picks customers whose `Total` exceeds $5.50. Subqueries shine when you need dynamic criteria like this.
+The subquery `(SELECT AVG(Total) FROM Sales)` finds the average sale amount, say \$5.50. The outer query then picks customers whose `Total` exceeds \$5.50. Subqueries shine when you need dynamic criteria like this.
 
 ## Types of Subqueries
 
@@ -35,7 +35,7 @@ FROM Sales
 WHERE Total = (SELECT MAX(Total) FROM Sales)
 ```
 
-The subquery `(SELECT MAX(Total) FROM Sales)` finds the top sale, say $12. The outer query returns the customer with that $12 sale. Be careful: if the subquery returns multiple rows, your query fails. Use aggregates like `MAX` or `MIN` to ensure one result.
+The subquery `(SELECT MAX(Total) FROM Sales)` finds the top sale, say \$12. The outer query returns the customer with that \$12 sale. Be careful: if the subquery returns multiple rows, your query fails. Use aggregates like `MAX` or `MIN` to ensure one result.
 
 ### Multiple-Row Subqueries
 
@@ -47,7 +47,7 @@ FROM Sales
 WHERE Total > ANY (SELECT Total FROM Sales WHERE OrderDate = '2023-01-01')
 ```
 
-The subquery `(SELECT Total FROM Sales WHERE OrderDate = '2023-01-01')` lists all sale amounts from January 1, say $4, $6, and $8. The outer query picks customers whose `Total` beats any of those, like $9 or $10. `ANY` means “greater than the smallest,” while `ALL` would mean “greater than the largest.” `IN` works for exact matches, like finding customers with specific totals.
+The subquery `(SELECT Total FROM Sales WHERE OrderDate = '2023-01-01')` lists all sale amounts from January 1, say \$4, \$6, and \$8. The outer query picks customers whose `Total` beats any of those, like \$9 or \$10. The `ANY` operator means “greater than the smallest,” while `ALL` would mean “greater than the largest.” The `IN` operator works for exact matches, like finding customers with specific totals.
 
 ### Correlated Subqueries
 
@@ -82,7 +82,7 @@ UPDATE Employees
 SET Salary = (SELECT AVG(Salary) FROM Employees)
 ```
 
-The subquery `(SELECT AVG(Salary) FROM Employees)` calculates the average salary, say $30,000. The outer query updates every `Salary` to $30,000. Ensure the subquery returns one value, or your update will fail.
+The subquery `(SELECT AVG(Salary) FROM Employees)` calculates the average salary, say \$30,000. The outer query updates every `Salary` to \$30,000. Ensure the subquery returns one value, or your update will fail.
 
 ## Limitations of Subqueries
 
@@ -90,7 +90,7 @@ Subqueries are handy but have quirks. Keep these in mind:
 
 - **Single Value or Row**: Single-row subqueries must return one value. Multiple-row subqueries need `IN`, `ANY`, or `ALL`. If a subquery returns too many rows for a comparison like equals, your query crashes.
 - **Performance**: Subqueries can be slow, especially correlated ones, as they run multiple times. For 1,000 sales records, a correlated subquery might execute 1,000 times. Joins or temporary tables often run faster.
-- **Database Support**: Most databases (e.g., PostgreSQL, MySQL) support subqueries, but older or niche systems might not. Check your database’s docs if queries fail.
+- **Database Support**: Most databases (e.g., PostgreSQL, MySQL) support subqueries, but older or niche systems might not. Check your database’s documentation if queries fail.
 
 Should you avoid subqueries? Not at all. Just weigh their speed against their convenience.
 
