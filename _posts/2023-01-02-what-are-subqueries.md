@@ -47,7 +47,7 @@ FROM Sales
 WHERE Total > ANY (SELECT Total FROM Sales WHERE OrderDate = '2023-01-01')
 ```
 
-The subquery `(SELECT Total FROM Sales WHERE OrderDate = '2023-01-01')` lists all sale amounts from January 1, say \$4, \$6, and \$8. The outer query picks customers whose `Total` beats any of those, like \$9 or \$10. The `ANY` operator means “greater than the smallest,” while `ALL` would mean “greater than the largest.” The `IN` operator works for exact matches, like finding customers with specific totals.
+The subquery `(SELECT Total FROM Sales WHERE OrderDate = '2023-01-01')` lists all sale amounts from January 1, say \$4, \$6, and \$8. The outer query picks customers whose `Total` beats any of those, like \$9 or \$10. The `ANY` operator means "greater than the smallest," while `ALL` would mean "greater than the largest." The `IN` operator works for exact matches, like finding customers with specific totals.
 
 ### Correlated Subqueries
 
@@ -67,11 +67,15 @@ Subqueries in the `FROM` clause create temporary tables, called derived tables. 
 
 ```sql
 SELECT OrderDate, AVG(Total) AS AvgDailySale
-FROM (SELECT OrderDate, Total FROM Sales WHERE Total > (SELECT AVG(Total) FROM Sales)) AS HighSales
+FROM (
+  SELECT OrderDate, Total 
+  FROM Sales 
+  WHERE Total > (SELECT AVG(Total) FROM Sales)
+) AS HighSales
 GROUP BY OrderDate
 ```
 
-The subquery `(SELECT OrderDate, Total FROM Sales WHERE Total > (SELECT AVG(Total) FROM Sales))` builds a table `HighSales` of above-average sales. The outer query groups these by `OrderDate` to show average daily sales. Name the derived table (e.g., `HighSales`) to avoid errors.
+The subquery builds a table `HighSales` of above-average sales. The outer query groups these by `OrderDate` to show average daily sales. Always name the derived table (e.g., `HighSales`) to avoid errors.
 
 ### Subqueries in the SET Clause
 
@@ -82,7 +86,7 @@ UPDATE Employees
 SET Salary = (SELECT AVG(Salary) FROM Employees)
 ```
 
-The subquery `(SELECT AVG(Salary) FROM Employees)` calculates the average salary, say \$30,000. The outer query updates every `Salary` to \$30,000. Ensure the subquery returns one value, or your update will fail.
+The subquery calculates the average salary, say \$30,000. The outer query updates every `Salary` to \$30,000. Ensure the subquery returns one value, or your update will fail.
 
 ## Limitations of Subqueries
 
