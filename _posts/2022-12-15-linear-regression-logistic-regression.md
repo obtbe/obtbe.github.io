@@ -41,7 +41,7 @@ Logistic regression predicts whether something happens, like if a moviegoer buys
 Suppose a theater tracks 150 customers, noting their age and whether they bought popcorn. A 25-year-old has a 40% chance of buying, while a 50-year-old has a 75% chance. The logistic regression equation is:
 
 ```
-P(Buy Popcorn) = 1 / (1 + e^(-(b0 + b1 * Age)))
+P(Buy Popcorn) = 1 / (1 + e^(-(-3.5 + 0.08 * Age)))
 ```
 
 Here, P(Buy Popcorn) is the probability, b0 is the starting point, and b1 adjusts how age affects the chance. Your data might give:
