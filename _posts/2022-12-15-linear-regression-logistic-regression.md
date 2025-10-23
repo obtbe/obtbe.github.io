@@ -14,13 +14,13 @@ Linear regression predicts numbers by finding a straight-line relationship betwe
 
 Imagine you track 40 days, recording temperature in degrees Fahrenheit and lemonade cups sold. On a 65°F day, you sell 120 cups, but on an 85°F day, you sell 160 cups. Linear regression creates a line that fits this pattern. The equation is:
 
-```
+```shell
 Cups Sold = b0 + b1 * Temperature
 ```
 
 Here, b0 is the starting point (cups sold if temperature were 0°F), and b1 is the slope (extra cups per degree). Your data might give:
 
-```
+```shell
 Cups Sold = 30 + 1.5 * Temperature
 ```
 
@@ -28,7 +28,7 @@ For a 70°F day, you’d predict 30 + 1.5 * 70 = 135 cups. The math minimizes th
 
 Another example: predicting a runner’s 5K time based on weekly training hours. Data from 60 runners shows 10 hours per week gives a 25-minute finish, while 15 hours gives 22 minutes. The model might be:
 
-```
+```shell
 Finish Time = 30 - 0.5 * Training Hours
 ```
 
@@ -40,13 +40,13 @@ Logistic regression predicts whether something happens, like if a moviegoer buys
 
 Suppose a theater tracks 150 customers, noting their age and whether they bought popcorn. A 25-year-old has a 40% chance of buying, while a 50-year-old has a 75% chance. The logistic regression equation is:
 
-```
+```shell
 P(Buy Popcorn) = 1 / (1 + e^(-(-3.5 + 0.08 * Age)))
 ```
 
 Here, P(Buy Popcorn) is the probability, b0 is the starting point, and b1 adjusts how age affects the chance. Your data might give:
 
-```
+```shell
 P(Buy Popcorn) = 1 / (1 + e^(-(-3.5 + 0.08 * Age)))
 ```
 
@@ -54,7 +54,7 @@ For a 30-year-old, calculate -3.5 + 0.08 * 30 = -1.1, so e^(-(-1.1)) = e^1.1 ≈
 
 Another example: predicting if a plant survives based on weekly watering days. Data from 80 plants shows 2 days of watering gives a 30% survival chance, while 5 days gives 80%. The model might be:
 
-```
+```shell
 P(Survive) = 1 / (1 + e^(-(-4 + 0.9 * Watering Days)))
 ```
 
@@ -68,7 +68,7 @@ Linear and logistic regression tackle different tasks. Here’s a breakdown:
 - **Inputs**: Both use numbers or categories (e.g., temperature or weekday/weekend), but logistic regression often prefers simpler inputs for clear probability curves.
 - **Math**: Linear regression assumes a straight line and minimizes squared errors, calculated as:
 
-```
+```shell
 Error = Sum (Actual - Predicted)^2
 ```
 
@@ -79,7 +79,7 @@ Error = Sum (Actual - Predicted)^2
 
 Use linear regression for number predictions. For example, a bakery might predict muffin sales based on the day’s foot traffic. Data from 50 days shows 200 visitors yield 80 muffins sold, while 300 visitors yield 110. The model could be:
 
-```
+```shell
 Muffins Sold = 20 + 0.3 * Visitors
 ```
 
