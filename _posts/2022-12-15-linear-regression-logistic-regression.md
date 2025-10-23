@@ -5,7 +5,6 @@ date: 2022-12-15 12:00:00
 categories: [statistics, regression, analysis]
 ---
 
-# Linear Regression vs Logistic Regression - Understanding the Differences
 
 Data analysis often uses two tools: linear regression and logistic regression. They sound alike, but they answer different questions. This article breaks down their differences with clear examples and the math behind them, so you can choose the right one for your data.
 

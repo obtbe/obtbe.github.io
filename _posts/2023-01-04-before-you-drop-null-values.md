@@ -5,7 +5,6 @@ date: 2023-07-03 12:00:00
 categories: [analysis, sql, data]
 ---
 
-# Before You Drop NULL Values - Smart Data Cleansing Choices
 
 Data analysis starts with clean data. NULL values, those pesky gaps in your dataset, can trip you up if you handle them poorly. Dropping them might seem like a quick fix, but it’s not always the best move. This article explores what NULL values are, why they matter, and how to handle them wisely using Power BI, Pandas, and SQL. Let’s dive in with clear examples to make your data shine.
 

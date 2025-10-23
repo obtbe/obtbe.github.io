@@ -5,7 +5,6 @@ date: 2023-01-02 12:00:00
 categories: [data, analysis, sql]
 ---
 
-# What Are Subqueries in SQL - A Practical Guide
 
 SQL queries can feel like magic when you need specific answers from your data. Subqueries, those queries nested inside others, are a powerful trick to pull out exactly what you want. They help you filter rows, calculate values, or update records with precision. This article breaks down what subqueries are, how they work, and when to use them, using a coffee shop’s sales data to keep things clear. Let’s get started.
 

@@ -5,7 +5,6 @@ date: 2022-09-02
 categories: [programming, python]
 ---
 
-# What Running a Coding Boot Camp Taught Me About Programming
 
 I’ve always loved coding. As a data nerd, I spend my days tinkering with Python scripts and digging into datasets. So when I got the chance to run a six-week coding boot camp for beginners in early 2022, I was thrilled. I wanted to share my excitement for programming and, honestly, learn a bit myself. Teaching 25 students, most of whom had never written a line of code, showed me new angles on what it means to program. Here’s what stuck with me.
 
